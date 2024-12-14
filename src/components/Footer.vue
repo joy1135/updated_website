@@ -13,7 +13,7 @@
 .footer {
     background-color: #00ABE1;
     margin-top: 45px;
-   
+    
 }
 
 .footer__box {

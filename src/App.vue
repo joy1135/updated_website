@@ -1,20 +1,24 @@
 <script setup>
 import Header from './components/Header.vue';
 import NavBar from './components/NavBar.vue';
-import NewsMain from './components/NewsMain.vue';
 import Footer from './components/Footer.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <Header></Header>
-  <NavBar></NavBar>
-  <NewsMain></NewsMain>
-  <Footer></Footer>
+ 
+    <Header></Header>
+    <NavBar></NavBar>
+    <RouterView></RouterView>    
+    <Footer></Footer>
+ 
 </template>
 
 <style>
 
-
+#app {
+  height: 100vh;
+}
 
 .container {
   max-width: 1280px;
@@ -41,7 +45,6 @@ import Footer from './components/Footer.vue';
   .container {
     max-width: 400px;
   }
-  
 }
 
 </style>
